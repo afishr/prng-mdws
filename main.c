@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
+#include <conio.h>
 #include <time.h>
 
 uint32_t x = 0, w = 0, s = 0xb5ad4eceda1ce2a9;
@@ -25,9 +26,9 @@ int main()
 
 	int min, max, nr;
 
-	printf("Enter the minimal value");
+	printf("Enter the minimal value ");
 	scanf("%d", &min);
-	printf("Enter the maximal value");
+	printf("Enter the maximal value ");
 	scanf("%d", &max);
 
 	for (int i = 0; i < 101; i++)
@@ -40,6 +41,8 @@ int main()
 
 	fclose(fs);
 	fclose(fp);
+
+	_getch();
 
 	return 0;
 }
